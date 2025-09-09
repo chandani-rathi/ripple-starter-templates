@@ -1,6 +1,6 @@
 {
 	"name": "vite-template-ripple",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "",
 	"type": "module",
 	"engines": {
@@ -18,13 +18,13 @@
 	"devDependencies": {
 		"@tailwindcss/vite": "^4.1.13",
 		"prettier": "^3.6.2",
-		"prettier-plugin-ripple": "0.2.15",
+		"prettier-plugin-ripple": "0.2.31",
 		"tailwindcss": "^4.1.13",
 		"typescript": "^5.9.2",
-		"vite": "^7.1.4",
-		"vite-plugin-ripple": "0.2.15"
+		"vite": "^7.1.5",
+		"vite-plugin-ripple": "0.2.31"
 	},
 	"dependencies": {
-		"ripple": "0.2.15"
+		"ripple": "0.2.31"
 	}
 }
