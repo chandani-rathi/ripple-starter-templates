@@ -18,13 +18,13 @@
 	"devDependencies": {
 		"@tailwindcss/vite": "^4.1.13",
 		"prettier": "^3.6.2",
-		"prettier-plugin-ripple": "0.2.35",
+		"prettier-plugin-ripple": "0.2.36",
 		"tailwindcss": "^4.1.13",
 		"typescript": "^5.9.2",
 		"vite": "^7.1.5",
-		"vite-plugin-ripple": "0.2.35"
+		"vite-plugin-ripple": "0.2.36"
 	},
 	"dependencies": {
-		"ripple": "0.2.35"
+		"ripple": "0.2.36"
 	}
 }
