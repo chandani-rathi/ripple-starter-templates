@@ -1,0 +1,33 @@
+{
+	"name": "vite-template-ripple",
+	"version": "0.0.0",
+	"description": "",
+	"type": "module",
+	"engines": {
+		"node": ">=20.0.0"
+	},
+	"scripts": {
+		"start": "vite",
+		"dev": "vite",
+		"test": "vitest",
+		"build": "vite build",
+		"serve": "vite preview",
+		"format": "prettier --write .",
+		"format:check": "prettier --check ."
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@tailwindcss/vite": "^4.1.13",
+		"prettier": "^3.6.2",
+		"prettier-plugin-ripple": "^0.2.49",
+		"tailwindcss": "^4.1.13",
+		"typescript": "^5.9.2",
+		"vite": "^7.1.6",
+		"vite-plugin-ripple": "^0.2.49"
+	},
+	"dependencies": {
+		"jsdom": "^27.0.0",
+		"ripple": "^0.2.49",
+		"vitest": "^3.2.4"
+	}
+}
