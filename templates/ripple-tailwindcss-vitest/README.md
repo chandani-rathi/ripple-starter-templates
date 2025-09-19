@@ -35,9 +35,18 @@ pnpm test
 
 Test files are located in the `tests/` directory and use the `.test.ripple` extension.
 
+
 ### About Vitest
 
 Vitest is a fast unit test framework for Vite projects. It supports Ripple files and runs tests in a jsdom environment.
+
+#### VS Code Extension
+
+For a better testing experience, install the official Vitest extension for VS Code:
+
+```vscode-extensions
+vitest.explorer
+```
 
 For more details, see [Vitest documentation](https://vitest.dev/).
 
