@@ -21,6 +21,28 @@ A minimal Ripple application template with TypeScript and Vite.
     npm run build
     ```
 
+## Running Tests
+
+This template uses [Vitest](https://vitest.dev/) for unit testing.
+
+### Run all tests
+
+```bash
+npm test
+# or
+pnpm test
+```
+
+Test files are located in the `tests/` directory and use the `.test.ripple` extension.
+
+### About Vitest
+
+Vitest is a fast unit test framework for Vite projects. It supports Ripple files and runs tests in a jsdom environment.
+
+For more details, see [Vitest documentation](https://vitest.dev/).
+
+---
+
 ## Code Formatting
 
 This template includes Prettier with the Ripple plugin for consistent code formatting.

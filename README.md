@@ -1,7 +1,13 @@
 # Ripple Starter Templates
 
-## Tailwindcss
+## Ripple Tailwindcss
 
 ```
-npx degit chandani-rathi/ripple-starter-templates/tailwindcss hello-ripple
+npx degit chandani-rathi/ripple-starter-templates/templates/ripple-tailwindcss hello-ripple
+```
+
+## Ripple Tailwindcss Vitest
+
+```
+npx degit chandani-rathi/ripple-starter-templates/templates/ripple-tailwindcss-vitest hello-ripple
 ```
