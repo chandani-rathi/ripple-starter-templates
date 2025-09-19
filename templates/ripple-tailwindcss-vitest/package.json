@@ -1,5 +1,5 @@
 {
-	"name": "vite-template-ripple",
+	"name": "ripple-tailwindcss-vitest",
 	"version": "0.0.0",
 	"description": "",
 	"type": "module",
@@ -19,15 +19,15 @@
 	"devDependencies": {
 		"@tailwindcss/vite": "^4.1.13",
 		"prettier": "^3.6.2",
-		"prettier-plugin-ripple": "^0.2.49",
+		"prettier-plugin-ripple": "^0.2.50",
 		"tailwindcss": "^4.1.13",
 		"typescript": "^5.9.2",
 		"vite": "^7.1.6",
-		"vite-plugin-ripple": "^0.2.49"
+		"vite-plugin-ripple": "^0.2.50"
 	},
 	"dependencies": {
 		"jsdom": "^27.0.0",
-		"ripple": "^0.2.49",
+		"ripple": "^0.2.50",
 		"vitest": "^3.2.4"
 	}
 }
