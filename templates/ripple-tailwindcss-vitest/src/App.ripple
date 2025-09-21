@@ -1,12 +1,14 @@
+import { track } from "ripple";
+
 export component App() {
 	<div class='text-center'>
 		<h1 class="font-semibold text-4xl">{'Welcome to Ripple!'}</h1>
 		<div class='my-4 text-2xl flex items-center justify-center gap-4'>
-			let $count = 0;
+			let count = track(0);
 
-			<button class="hover:bg-gray-300/50 p-4 text-4xl rounded text-mid" onClick={() => $count--}>{'-'}</button>
-			<span class='font-bold text-3xl w-16'>{$count}</span>
-			<button class="hover:bg-gray-300/50 p-4 text-4xl rounded" onClick={() => $count++}>{'+'}</button>
+			<button class="hover:bg-gray-300/50 p-4 text-4xl rounded text-mid" onClick={() => @count--}>{'-'}</button>
+			<span class='font-bold text-3xl w-16'>{@count}</span>
+			<button class="hover:bg-gray-300/50 p-4 text-4xl rounded" onClick={() => @count++}>{'+'}</button>
 		</div>
 		<div>
 			<p>{'This is a basic Ripple application template.'}</p>
