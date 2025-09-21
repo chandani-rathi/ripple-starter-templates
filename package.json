@@ -4,7 +4,9 @@
   "description": "```\r npx degit chandani-rathi/ripple-starter-templates/tailwindcss hello-ripple\r ```",
   "main": "index.js",
   "scripts": {
-    "v:updates": "npx npm-check-updates -u -ws"
+    "v:updates": "npx npm-check-updates -u -ws",
+    "dev:tailwindcss": "npm run dev --workspace ripple-tailwindcss",
+    "dev:vitest": "npm run dev --workspace ripple-tailwindcss-vitest"
   },
   "workspaces" : [
     "templates/*"
