@@ -1,19 +1,32 @@
+
+
 # Ripple Starter Templates
 
-## Ripple Tailwindcss
+This repository contains multiple starter templates for building Ripple applications and libraries. Each template is located in the `templates/` folder and includes its own README with detailed instructions.
 
-```
-npx degit chandani-rathi/ripple-starter-templates/templates/ripple-tailwindcss hello-ripple
-```
+## Available Templates & Clone Commands
 
-## Ripple Tailwindcss Vitest
+### Ripple Tailwindcss
+- Clone:
+	```bash
+	npx degit chandani-rathi/ripple-starter-templates/templates/ripple-tailwindcss my-ripple-app
+	```
+- [See README](./templates/ripple-tailwindcss/README.md)
 
-```
-npx degit chandani-rathi/ripple-starter-templates/templates/ripple-tailwindcss-vitest hello-ripple
-```
+### Ripple Tailwindcss Vitest
+- Clone:
+	```bash
+	npx degit chandani-rathi/ripple-starter-templates/templates/ripple-tailwindcss-vitest my-ripple-vitest-app
+	```
+- [See README](./templates/ripple-tailwindcss-vitest/README.md)
 
-## Ripple Lib workspace
+### Ripple Lib Workspace
+- Clone:
+	```bash
+	npx degit chandani-rathi/ripple-starter-templates/templates/ripple-lib my-ripple-lib
+	```
+- [See README](./templates/ripple-lib/README.md)
 
-```
-npx degit chandani-rathi/ripple-starter-templates/templates/ripple-lib hello-ripple-lib
-```
+---
+
+For full documentation and setup instructions, refer to the README in each template folder above.
