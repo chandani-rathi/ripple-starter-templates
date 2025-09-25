@@ -16,9 +16,6 @@ export default defineConfig({
 			'tests/**/*.test.ripple',
 			'tests/**/*.test.js',
 		],
-		deps: {
-			inline: ['ripple'],
-		},
 		environment: 'jsdom',
 		...configDefaults.test,
 	},
