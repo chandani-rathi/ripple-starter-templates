@@ -1,31 +1,71 @@
-# Ripple Basic Template
 
-A minimal Ripple application template with TypeScript and Vite.
+# Ripple Lib Workspace Template
+
+This is a starter template for building libraries and applications with Ripple, TypeScript, and Vite. It includes everything you need for development, testing, formatting, and publishing.
+
+---
 
 ## Getting Started
 
-1. Install dependencies:
+### 1. Clone or Download the Template
 
-    ```bash
-    npm install # or pnpm or yarn
-    ```
+You can use `degit` to quickly scaffold a new project:
 
-2. Start the development server:
+```bash
+npx degit chandani-rathi/ripple-starter-templates/templates/ripple-lib my-ripple-lib
+cd my-ripple-lib
+```
 
-    ```bash
-    npm run dev
-    ```
 
-3. Build for production:
-    ```bash
-    npm run build
-    ```
+### 2. Rename Your Project (Important for Libraries)
 
-## Running Tests
+To fully rename your library project, update the following:
 
-This template uses [Vitest](https://vitest.dev/) for unit testing.
+1. **Root `package.json`**: Change the `name` field to your new project name.
+2. **Library Package**: Go to `packages/ripple-lib/package.json` and update the `name` field (e.g., `"name": "my-ripple-lib"`).
+3. **Apps Folder**: If you want to rename the test app, update `apps/ripple-app/package.json` and any references to the app name.
+4. **Workspace Config**: If you rename folders, update `pnpm-workspace.yaml` to match your new folder names.
+5. **Other Metadata**: Update the README, documentation, and any other files referencing the old name.
 
-### Run all tests
+**Tip:** Use global search in your editor to find all instances of the old name and replace them.
+
+---
+
+### 3. Install Dependencies
+
+### 3. Install Dependencies
+
+```bash
+npm install # or pnpm or yarn
+```
+
+### 4. Start Development Server
+
+```bash
+npm run dev
+# or
+pnpm dev
+```
+
+### 5. Build for Production
+
+```bash
+npm run build
+```
+
+### 6. Preview Production Build
+
+```bash
+npm run serve
+```
+
+---
+
+## Testing
+
+This template uses [Vitest](https://vitest.dev/) for unit testing. Test files are located in the `tests/` directory and use the `.test.ripple` extension.
+
+### Run All Tests
 
 ```bash
 npm test
@@ -33,14 +73,7 @@ npm test
 pnpm test
 ```
 
-Test files are located in the `tests/` directory and use the `.test.ripple` extension.
-
-
-### About Vitest
-
-Vitest is a fast unit test framework for Vite projects. It supports Ripple files and runs tests in a jsdom environment.
-
-#### VS Code Extension
+### VS Code Extension
 
 For a better testing experience, install the official Vitest extension for VS Code:
 
@@ -48,33 +81,110 @@ For a better testing experience, install the official Vitest extension for VS Co
 vitest.explorer
 ```
 
-For more details, see [Vitest documentation](https://vitest.dev/).
-
 ---
 
 ## Code Formatting
 
-This template includes Prettier with the Ripple plugin for consistent code formatting.
+Prettier is included with the Ripple plugin for consistent code formatting.
 
-### Available Commands
+### Format All Files
 
-- `npm run format` - Format all files
-- `npm run format:check` - Check if files are formatted correctly
+```bash
+npm run format
+```
 
-### Configuration
+### Check Formatting
 
-Prettier is configured in `.prettierrc` with the following settings:
+```bash
+npm run format:check
+```
+
+Prettier is configured in `.prettierrc`:
 
 - Uses tabs for indentation
 - Single quotes for strings
 - 100 character line width
 - Includes the `prettier-plugin-ripple` for `.ripple` file formatting
 
-### VS Code Integration
+---
 
-For the best development experience, install the [Prettier VS Code extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) and the [Ripple VS Code extension](https://marketplace.visualstudio.com/items?itemName=ripplejs.ripple-vscode-plugin).
+## Patch and Publish
+
+### Patch
+
+To update dependencies or apply patches, use:
+
+```bash
+npx npm-check-updates -u
+npm install
+```
+
+### Publish
+
+To publish your package to npm:
+
+1. Update the version in `package.json`.
+2. Run:
+    ```bash
+    npm publish
+    ```
+
+---
+
+
+## Directory Structure
+
+- `packages/` - Contains your Ripple library code (e.g., `ripple-lib`)
+- `apps/` - Contains example/test apps that use your library (e.g., `ripple-app`)
+- `pnpm-workspace.yaml` - Workspace configuration for monorepo management
+- `README.md` - Project documentation
+
+### Library Package
+- `packages/ripple-lib/src/` - Source code for your library
+- `packages/ripple-lib/tests/` - Unit tests for your library
+
+### Example/Test App
+- `apps/ripple-app/` - Example app to test and demo your library
+
+---
+
+## How to Use the Apps Folder to Test Your Library
+
+The `apps/` folder contains one or more example applications that use your library directly from the workspace. This is useful for:
+
+- Manual testing and development of your library in a real app
+- Creating demo apps for documentation or sharing
+
+### Typical Workflow
+1. Make changes to your library in `packages/ripple-lib/src/`.
+2. Run or develop the app in `apps/ripple-app/` using:
+  ```bash
+  cd apps/ripple-app
+  npm run dev
+  # or pnpm dev
+  ```
+3. The app will use the local version of your library (no need to publish to npm).
+4. You can import your library in the app code as:
+  ```js
+  import { ... } from 'ripple-lib';
+  ```
+5. When ready, build and publish your library from the `packages/ripple-lib` folder.
+
+---
+
+---
+
+## VS Code Integration
+
+For the best development experience, install:
+
+- [Prettier VS Code extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Ripple VS Code extension](https://marketplace.visualstudio.com/items?itemName=ripplejs.ripple-vscode-plugin)
+
+---
 
 ## Learn More
 
 - [Ripple Documentation](https://github.com/trueadm/ripple)
 - [Vite Documentation](https://vitejs.dev/)
+- [Vitest Documentation](https://vitest.dev/)

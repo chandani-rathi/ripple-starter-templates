@@ -1,31 +1,66 @@
-# Ripple Basic Template
 
-A minimal Ripple application template with TypeScript and Vite.
+# Ripple Tailwindcss Vitest Template
+
+This is a starter template for building Ripple applications with TypeScript, TailwindCSS, Vite, and Vitest. It includes everything you need for development, testing, formatting, and publishing.
+
+---
 
 ## Getting Started
 
-1. Install dependencies:
+### 1. Clone or Download the Template
 
-    ```bash
-    npm install # or pnpm or yarn
-    ```
+You can use `degit` to quickly scaffold a new project:
 
-2. Start the development server:
+```bash
+npx degit chandani-rathi/ripple-starter-templates/templates/ripple-tailwindcss-vitest my-ripple-app
+cd my-ripple-app
+```
 
-    ```bash
-    npm run dev
-    ```
+### 2. Rename Your Project
 
-3. Build for production:
-    ```bash
-    npm run build
-    ```
+Update the `name` field in `package.json` to your desired project name:
 
-## Running Tests
+```json
+{
+  "name": "my-ripple-app"
+}
+```
 
-This template uses [Vitest](https://vitest.dev/) for unit testing.
+You may also want to update the README and other metadata files.
 
-### Run all tests
+### 3. Install Dependencies
+
+```bash
+npm install # or pnpm or yarn
+```
+
+### 4. Start Development Server
+
+```bash
+npm run dev
+# or
+pnpm dev
+```
+
+### 5. Build for Production
+
+```bash
+npm run build
+```
+
+### 6. Preview Production Build
+
+```bash
+npm run serve
+```
+
+---
+
+## Testing
+
+This template uses [Vitest](https://vitest.dev/) for unit testing. Test files are located in the `tests/` directory and use the `.test.ripple` extension.
+
+### Run All Tests
 
 ```bash
 npm test
@@ -33,14 +68,7 @@ npm test
 pnpm test
 ```
 
-Test files are located in the `tests/` directory and use the `.test.ripple` extension.
-
-
-### About Vitest
-
-Vitest is a fast unit test framework for Vite projects. It supports Ripple files and runs tests in a jsdom environment.
-
-#### VS Code Extension
+### VS Code Extension
 
 For a better testing experience, install the official Vitest extension for VS Code:
 
@@ -48,33 +76,79 @@ For a better testing experience, install the official Vitest extension for VS Co
 vitest.explorer
 ```
 
-For more details, see [Vitest documentation](https://vitest.dev/).
-
 ---
 
 ## Code Formatting
 
-This template includes Prettier with the Ripple plugin for consistent code formatting.
+Prettier is included with the Ripple plugin for consistent code formatting.
 
-### Available Commands
+### Format All Files
 
-- `npm run format` - Format all files
-- `npm run format:check` - Check if files are formatted correctly
+```bash
+npm run format
+```
 
-### Configuration
+### Check Formatting
 
-Prettier is configured in `.prettierrc` with the following settings:
+```bash
+npm run format:check
+```
+
+Prettier is configured in `.prettierrc`:
 
 - Uses tabs for indentation
 - Single quotes for strings
 - 100 character line width
 - Includes the `prettier-plugin-ripple` for `.ripple` file formatting
 
-### VS Code Integration
+---
 
-For the best development experience, install the [Prettier VS Code extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) and the [Ripple VS Code extension](https://marketplace.visualstudio.com/items?itemName=ripplejs.ripple-vscode-plugin).
+## Patch and Publish
+
+### Patch
+
+To update dependencies or apply patches, use:
+
+```bash
+npx npm-check-updates -u
+npm install
+```
+
+### Publish
+
+To publish your package to npm:
+
+1. Update the version in `package.json`.
+2. Run:
+    ```bash
+    npm publish
+    ```
+
+---
+
+## Directory Structure
+
+- `src/` - Source code for your Ripple app
+- `tests/` - Test files (`.test.ripple`)
+- `__snapshots__/` - Test snapshots
+- `index.html` - Main HTML file
+- `vite.config.js` - Vite configuration
+- `tsconfig.json` - TypeScript configuration
+- `.prettierrc` - Prettier configuration
+
+---
+
+## VS Code Integration
+
+For the best development experience, install:
+
+- [Prettier VS Code extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Ripple VS Code extension](https://marketplace.visualstudio.com/items?itemName=ripplejs.ripple-vscode-plugin)
+
+---
 
 ## Learn More
 
 - [Ripple Documentation](https://github.com/trueadm/ripple)
 - [Vite Documentation](https://vitejs.dev/)
+- [Vitest Documentation](https://vitest.dev/)
