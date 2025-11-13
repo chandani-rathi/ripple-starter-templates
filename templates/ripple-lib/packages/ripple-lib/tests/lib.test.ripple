@@ -1,11 +1,12 @@
-import { describe, it, expect, beforeEach, afterEach } from 'vitest';
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { mount, flushSync, effect } from 'ripple';
+import { MyLib } from "@/lib.ripple"
 
-describe('basic', () => {
+describe('lib', () => {
 	let container;
 
-	function render(component) {
-		mount(component, {
+	function render(comp) {
+		mount(comp, {
 			target: container
 		});
 	}
@@ -20,12 +21,8 @@ describe('basic', () => {
 		container = null;
 	});
 
-	it('render static text', () => {
-		component Basic() {
-			<div>{'Hello World'}</div>
-		}
-
-		render(Basic);
-		expect(container).toMatchSnapshot();
+	it('render', () => {
+		render(MyLib);
+		expect(container).toMatchSnapshot()
 	});
 });

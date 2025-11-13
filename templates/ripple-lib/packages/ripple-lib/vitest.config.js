@@ -5,6 +5,7 @@ import path from 'node:path';
 export default defineConfig({
 	plugins: [ripple({})],
 	resolve: {
+		conditions: process.env.VITEST ? ['browser'] : undefined,
 		alias: {
 			'@': path.resolve(__dirname, './src'),
 		},

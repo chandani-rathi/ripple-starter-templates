@@ -10,7 +10,8 @@
 	"scripts": {
 		"start": "vite",
 		"dev": "vite",
-		"test": "vitest",
+		"test": "vitest run",
+		"test:watch": "vitest",
 		"build": "vite build",
 		"serve": "vite preview",
 		"format": "prettier --write .",
