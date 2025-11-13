@@ -19,8 +19,16 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
+		"@ripple-ts/eslint-plugin": "latest",
+		"@ripple-ts/prettier-plugin": "latest",
+		"@ripple-ts/typescript-plugin": "latest",
+		"@ripple-ts/vite-plugin": "latest",
 		"jsdom": "^27.2.0",
-		"vite-plugin-ripple": "^0.2.152",
-		"vitest": "^4.0.8"
+		"prettier": "^3.6.2",
+		"typescript": "^5.9.2",
+		"vite": "^7.1.7",
+		"vitest": "^3.2.4",
+		"@vitest/coverage-v8": "^3.2.4",
+    	"vite-plugin-dts": "^4.5.4"
 	}
 }

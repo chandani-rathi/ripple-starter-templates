@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
-import { ripple } from 'vite-plugin-ripple';
-import path from 'path';
+import { ripple } from '@ripple-ts/vite-plugin';
+import path from 'node:path';
 import dtsPlugin from 'vite-plugin-dts';
 
 export default defineConfig({

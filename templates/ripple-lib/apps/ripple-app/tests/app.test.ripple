@@ -5,8 +5,8 @@ import { App } from "@/App.ripple"
 describe('app', () => {
 	let container;
 
-	function render(component) {
-		mount(component, {
+	function render(comp) {
+		mount(comp, {
 			target: container
 		});
 	}
