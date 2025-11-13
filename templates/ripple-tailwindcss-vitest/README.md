@@ -1,22 +1,28 @@
 
-# Ripple Tailwindcss Vitest Template
+# Ripple TailwindCSS + Vitest Template
 
-This is a starter template for building Ripple applications with TypeScript, TailwindCSS, Vite, and Vitest. It includes everything you need for development, testing, formatting, and publishing.
+Starter template for building Ripple applications with TypeScript, Tailwind CSS, Vite, and Vitest. Includes:
+
+- Ripple components with TypeScript
+- Tailwind CSS v4 with Vite plugin
+- Unit testing with Vitest
+- Code formatting with Prettier and ESLint
+- Hot module reloading (HMR) for fast development
 
 ---
 
 ## Getting Started
 
-### 1. Clone or Download the Template
+### 1. Clone the template
 
-You can use `degit` to quickly scaffold a new project:
+Scaffold a new project with `degit`:
 
 ```bash
 npx degit chandani-rathi/ripple-starter-templates/templates/ripple-tailwindcss-vitest my-ripple-app
 cd my-ripple-app
 ```
 
-### 2. Rename Your Project
+### 2. Rename your project
 
 Update the `name` field in `package.json` to your desired project name:
 
@@ -26,32 +32,32 @@ Update the `name` field in `package.json` to your desired project name:
 }
 ```
 
-You may also want to update the README and other metadata files.
-
-### 3. Install Dependencies
+### 3. Install dependencies
 
 ```bash
-npm install # or pnpm or yarn
+pnpm install
+# or npm install / yarn install
 ```
 
-### 4. Start Development Server
+### 4. Start development server
 
 ```bash
-npm run dev
-# or
 pnpm dev
+# or npm run dev
 ```
 
-### 5. Build for Production
+The application will be available at `http://localhost:5173`.
+
+### 5. Build for production
 
 ```bash
-npm run build
+pnpm build
 ```
 
-### 6. Preview Production Build
+### 6. Preview production build
 
 ```bash
-npm run serve
+pnpm serve
 ```
 
 ---
@@ -60,95 +66,104 @@ npm run serve
 
 This template uses [Vitest](https://vitest.dev/) for unit testing. Test files are located in the `tests/` directory and use the `.test.ripple` extension.
 
-### Run All Tests
+Run tests:
 
 ```bash
-npm test
-# or
 pnpm test
 ```
 
-### VS Code Extension
+Watch mode (development):
 
-For a better testing experience, install the official Vitest extension for VS Code:
-
-```vscode-extensions
-vitest.explorer
+```bash
+pnpm test:watch
 ```
+
+Generate coverage:
+
+```bash
+pnpm test:coverage
+```
+
+Interactive UI:
+
+```bash
+pnpm test:ui
+```
+
+For an enhanced VS Code experience, install the Vitest extension (`vitest.explorer`).
 
 ---
 
-## Code Formatting
+## Code Formatting & Linting
 
-Prettier is included with the Ripple plugin for consistent code formatting.
+Prettier and ESLint are configured for consistent code quality.
 
-### Format All Files
-
-```bash
-npm run format
-```
-
-### Check Formatting
+Format or check formatting:
 
 ```bash
-npm run format:check
+pnpm format
+pnpm format:check
 ```
 
-Prettier is configured in `.prettierrc`:
+Run ESLint:
+
+```bash
+pnpm lint
+```
+
+Prettier configuration (in `.prettierrc`):
 
 - Uses tabs for indentation
 - Single quotes for strings
 - 100 character line width
-- Includes the `prettier-plugin-ripple` for `.ripple` file formatting
+- Includes the `@ripple-ts/prettier-plugin` for `.ripple` file formatting
 
 ---
 
-## Patch and Publish
+## Styling with Tailwind CSS
 
-### Patch
+This template includes Tailwind CSS v4 configured with the Vite plugin for optimized styling. You can use Tailwind utility classes in your components:
 
-To update dependencies or apply patches, use:
-
-```bash
-npx npm-check-updates -u
-npm install
+```ripple
+<div class="flex items-center justify-center min-h-screen">
+  <h1 class="text-4xl font-bold">Hello World</h1>
+</div>
 ```
 
-### Publish
-
-To publish your package to npm:
-
-1. Update the version in `package.json`.
-2. Run:
-    ```bash
-    npm publish
-    ```
+Refer to the [Tailwind CSS Documentation](https://tailwindcss.com/) for more information.
 
 ---
 
-## Directory Structure
+## Project Structure
 
-- `src/` - Source code for your Ripple app
-- `tests/` - Test files (`.test.ripple`)
-- `__snapshots__/` - Test snapshots
-- `index.html` - Main HTML file
-- `vite.config.js` - Vite configuration
-- `tsconfig.json` - TypeScript configuration
-- `.prettierrc` - Prettier configuration
+```
+src/
+  ├── App.ripple      # Main application component
+  ├── index.ts        # Application entry point
+  ├── style.css       # Global styles
+  └── assets/         # Static assets
+
+tests/
+  ├── app.test.ripple # App component tests
+  ├── basic.test.ripple
+  └── __snapshots__/  # Test snapshots
+```
 
 ---
 
-## VS Code Integration
+## VS Code Extensions
 
 For the best development experience, install:
 
-- [Prettier VS Code extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [Ripple VS Code extension](https://marketplace.visualstudio.com/items?itemName=ripplejs.ripple-vscode-plugin)
+- Prettier (`esbenp.prettier-vscode`)
+- Ripple plugin for VS Code (`ripple-ts.vscode-plugin`)
+- Vitest (`vitest.explorer`)
 
 ---
 
 ## Learn More
 
-- [Ripple Documentation](https://github.com/trueadm/ripple)
+- [Ripple Documentation](https://github.com/Ripple-TS/ripple)
 - [Vite Documentation](https://vitejs.dev/)
 - [Vitest Documentation](https://vitest.dev/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/)

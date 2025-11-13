@@ -15,23 +15,6 @@ A complete Ripple application template with TypeScript, Vite, Tailwind CSS, ESLi
 	```
 - [See README](./templates/ripple-app/README.md)
 
-### Ripple Tailwindcss
-A minimal Ripple application template with TypeScript and Vite.
-
-- Clone:
-	```bash
-	npx degit chandani-rathi/ripple-starter-templates/templates/ripple-tailwindcss my-ripple-app
-	```
-- [See README](./templates/ripple-tailwindcss/README.md)
-
-### Ripple Tailwindcss Vitest
-A Ripple application template with TypeScript, TailwindCSS, Vite, and Vitest for testing.
-
-- Clone:
-	```bash
-	npx degit chandani-rathi/ripple-starter-templates/templates/ripple-tailwindcss-vitest my-ripple-vitest-app
-	```
-- [See README](./templates/ripple-tailwindcss-vitest/README.md)
 
 ### Ripple Lib Workspace
 A starter template for building libraries and applications with Ripple, TypeScript, and Vite. Includes monorepo support with pnpm workspaces.
@@ -41,6 +24,25 @@ A starter template for building libraries and applications with Ripple, TypeScri
 	npx degit chandani-rathi/ripple-starter-templates/templates/ripple-lib my-ripple-lib
 	```
 - [See README](./templates/ripple-lib/README.md)
+
+
+### Ripple Tailwindcss (outdated)
+A minimal Ripple application template with TypeScript and Vite.
+
+- Clone:
+	```bash
+	npx degit chandani-rathi/ripple-starter-templates/templates/ripple-tailwindcss my-ripple-app
+	```
+- [See README](./templates/ripple-tailwindcss/README.md)
+
+### Ripple Tailwindcss Vitest (outdated)
+A Ripple application template with TypeScript, TailwindCSS, Vite, and Vitest for testing.
+
+- Clone:
+	```bash
+	npx degit chandani-rathi/ripple-starter-templates/templates/ripple-tailwindcss-vitest my-ripple-vitest-app
+	```
+- [See README](./templates/ripple-tailwindcss-vitest/README.md)
 
 ---
 
