@@ -1,6 +1,7 @@
 import { track } from "ripple";
 
 export component App() {
+	console.log("testing..")
 	<div class='text-center'>
 		<h1 class="font-semibold text-4xl">{'Welcome to Ripple!'}</h1>
 		<div class='my-4 text-2xl flex items-center justify-center gap-4'>

@@ -9,7 +9,7 @@
     "dev:vitest": "npm run dev --workspace ripple-tailwindcss-vitest"
   },
   "workspaces" : [
-    "templates/*"
+    "templates/ripple-tailwindcss"
   ],
   "repository": {
     "type": "git",

@@ -19,8 +19,8 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"jsdom": "^27.0.0",
-		"vite-plugin-ripple": "^0.2.113",
-		"vitest": "^3.2.4"
+		"jsdom": "^27.2.0",
+		"vite-plugin-ripple": "^0.2.152",
+		"vitest": "^4.0.8"
 	}
 }
